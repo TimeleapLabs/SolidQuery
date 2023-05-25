@@ -77,6 +77,16 @@ Person:
 
 ![SolidQuery Demo](./assets/solidq.demo.png)
 
+## Roadmap
+
+We have planned the following features:
+
+- Fine control over contract generation
+- Array fields
+- Relations
+- Better indexing
+- Range queries
+
 ## Contributing
 
 We welcome and appreciate all contributions. If you're interested in
