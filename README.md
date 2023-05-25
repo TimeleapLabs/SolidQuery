@@ -29,7 +29,7 @@ You can find the SolidQuery playground [here](https://kenshi.io/solidquery/playg
 ### Installation
 
 ```shell
-npm install -g solidq
+npm install -g @kenshi.io/solidquery
 ```
 
 ### Usage
