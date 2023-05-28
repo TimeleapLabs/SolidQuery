@@ -49,11 +49,15 @@ solidq schema.yaml MyContract.sol
 Book:
   Name: string
   Author: string indexed
-  Published: uint256 indexed
+  Published: uint256 indexed get set
 
 Person:
   Name: string
   Birth: uint256 indexed
+
+User:
+  Address: address id
+  Balance: uint256
 ```
 
 is equivalent to
@@ -64,6 +68,8 @@ Book:
   Author:
     type: string
     indexed: true
+    get: true
+    set: true
   Published:
     type: uint256
     indexed: true
@@ -73,6 +79,11 @@ Person:
   Birth:
     type: uint256
     indexed: true
+
+User:
+  Address:
+    type: address
+    id: true
 ```
 
 ![SolidQuery Demo](./assets/solidq.demo.png)
@@ -81,6 +92,7 @@ Person:
 
 We have planned the following features:
 
+- Schema validation
 - Fine control over contract generation
 - Array fields
 - Relations
