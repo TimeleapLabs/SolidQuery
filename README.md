@@ -47,6 +47,7 @@ solidq schema.yaml MyContract.sol
 
 ```yaml
 Book:
+  Id: uint256 id auto
   Name: string
   Author: string indexed
   Published: uint256 indexed get set
@@ -64,6 +65,10 @@ is equivalent to
 
 ```yaml
 Book:
+  Id:
+    type: uint256
+    id: true
+    auto: true
   Name: string
   Author:
     type: string
@@ -84,7 +89,11 @@ User:
   Address:
     type: address
     id: true
+  Balance:
+    type: uint256
 ```
+
+You can learn the schema language [here](./schema.md).
 
 ![SolidQuery Demo](./assets/solidq.demo.png)
 
@@ -92,7 +101,6 @@ User:
 
 We have planned the following features:
 
-- Schema validation
 - Fine control over contract generation
 - Array fields
 - Relations
