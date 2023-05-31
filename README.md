@@ -8,6 +8,10 @@ SolidQuery provides a highly customized and fully decentralized data management
 solution for the Ethereum blockchain, allowing seamless integration with your
 DApps.
 
+This [demo](https://solidquery-library-demo.vercel.app/) stores and indexes all
+its data on the Arbitrum mainnet. The generated contract is deployed as-is, with
+no modifications.
+
 ## Key Features
 
 - **Custom Schema Generation:** Define your data structure using YAML and let
@@ -106,6 +110,7 @@ We have planned the following features:
 - Relations
 - Better indexing
 - Range queries
+- Multi-dimensional indexing
 
 ## Contributing
 
